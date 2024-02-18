@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Práctica 01 | Prácticas Arduino </title>
+<title>Práctica 07 | Prácticas Arduino </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
@@ -15,7 +15,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Prácticas Arduino</div></header>
@@ -24,13 +24,13 @@
    <li><a href="index.html" class="daddy main-node">Prácticas Arduino</a></li>
    <li><a href="introduccin_a_arduino.html" class="no-ch">Introducción a Arduino</a></li>
    <li><a href="primeros_pasos_con_arduino.html" class="no-ch">Primeros pasos con Arduino</a></li>
-   <li id="active"><a href="prctica_01.html" class="active no-ch">Práctica 01</a></li>
+   <li><a href="prctica_01.html" class="no-ch">Práctica 01</a></li>
    <li><a href="prctica_02.html" class="no-ch">Práctica 02</a></li>
    <li><a href="prctica_03.html" class="no-ch">Práctica 03</a></li>
    <li><a href="prctica_04.html" class="no-ch">Práctica 04</a></li>
    <li><a href="prctica_05.html" class="no-ch">Práctica 05</a></li>
    <li><a href="prctica_06.html" class="no-ch">Práctica 06</a></li>
-   <li><a href="prctica_07.html" class="no-ch">Práctica 07</a></li>
+   <li id="active"><a href="prctica_07.html" class="active no-ch">Práctica 07</a></li>
    <li><a href="prctica_08.html" class="no-ch">Práctica 08</a></li>
    <li><a href="prctica_09.html" class="no-ch">Práctica 09</a></li>
    <li><a href="prctica_10.html" class="no-ch">Práctica 10</a></li>
@@ -38,56 +38,60 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="primeros_pasos_con_arduino.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_02.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="prctica_06.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_08.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Práctica 01</h1></header>
-<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id2">
+<header id="nodeDecoration"><h1 id="nodeTitle">Práctica 07</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id32">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta2_116_2" class="block iDevice_content">
-<div class="pbl-task-description"><p>En esta primera práctica vamos a realizar el equivalente al “Hola Mundo” de cualquier lenguaje de programación haciendo simplemente el encendido y apagado de un LED.</p></div>
+<div id="ta32_124_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Con el mismo circuito que en la práctica anterior, deberemos cambiar la programación de Arduino para que funcione de la siguiente manera:</p>
+<ul>
+<li>La primera vez que se ejecute el void loop (), los tres leds seguirán la secuencia: verde (1 s), amarillo (1 s) y rojo (1 s)</li>
+<li>Cada vez que se ejecute el bucle, el tiempo que permanecerá encendido cada led disminuirá en 0,1 s.</li>
+<li>Cuando cada led permanezca encendido solo 0,1 s, el retardo permanecerá con ese valor de 0,1 s, no disminuyendo más.</li>
+</ul></div>
 </div>
 </div>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id5">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id33">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Esquema de montaje</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta5_114_2" class="block iDevice_content">
-<div class="exe-text"><ol></ol>
-<div><img src="Captura_desde_2024-02-18_18-49-27.png" width="801" height="686" style="display: block; margin-left: auto; margin-right: auto;" /></div></div>
+<div id="ta33_125_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="Captura_desde_2024-02-18_19-29-50.png" alt="" width="668" height="750" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
 </div>
 </div>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id10">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id34">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Programación</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta10_121_2" class="block iDevice_content">
-<div class="exe-text"><p><img src="02.png" alt="" width="583" height="318" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+<div id="ta34_126_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="Captura_desde_2024-02-18_19-37-20.png" alt="" width="677" height="578" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
 </div>
 </div>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id11">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id35">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso a paso</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta11_122_2" class="block iDevice_content">
-<div class="exe-text"><p style="text-align: center;"><iframe width="640" height="480" src="https://drive.google.com/file/d/1Dc-i8_mTIEftQVRdH7sJgP1zojnKaJ0c/preview" allow="autoplay"></iframe></p></div>
+<div id="ta35_127_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><iframe width="640" height="480" src="https://drive.google.com/file/d/1nZmyX5bclZ4ebiBDnDiFNk6dwwLQ9K60/preview" allow="autoplay"></iframe></p></div>
 </div>
 </div>
 </div>
@@ -100,7 +104,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="primeros_pasos_con_arduino.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_02.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="prctica_06.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_08.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
