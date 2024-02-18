@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Primeros pasos con Arduino | Prácticas Arduino </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Prácticas Arduino</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Prácticas Arduino</a></li>
+   <li><a href="introduccin_a_arduino.html" class="no-ch">Introducción a Arduino</a></li>
+   <li id="active"><a href="primeros_pasos_con_arduino.html" class="active no-ch">Primeros pasos con Arduino</a></li>
+   <li><a href="prctica_1.html" class="no-ch">Práctica 1</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="introduccin_a_arduino.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_1.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Primeros pasos con Arduino</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id9">
+<div class="iDevice emphasis0" >
+<div id="ta9_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Vamos a desarrollar este punto basándonos en un programa de ejemplo que viene cuando ejemplo que viene con el IDE Arduino.</p>
+<p>Ejecuta el IDE Arduino y se nos abrirá la siguiente pestaña:</p>
+<p><img src="code_01.png" alt="" width="400" height="468" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Abre el programa de ejemplo «Blink», este programa hace que el LED que lleva incorporado la placa Arduino y que está conectado al pin 13 se encienda y se apague con un intervalo de 1 segundo:</p>
+<p><img src="code_02.png" width="449" height="218" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>El código que nos aparecerá en pantalla tienes tres partes principales:</p>
+<p><img src="code_03.png" alt="" width="450" height="372" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="font-size: 14pt;"><strong>Zona global</strong></span><br />Aquí será donde indicaremos a Arduino los nombres de los pines y donde crearemos aquellas variables que queramos que existan en todo el programa. Aunque comprende todo lo que está fuera de las otras dos zonas, es recomendable agruparlo todo en la parte superior del código.</p>
+<p>También se pueden crear nuestras propias funciones. En el caso del ejemplo “Blink”, podríamos haber puesto lo siguiente:</p>
+<p><img src="code_04.png" alt="" width="451" height="189" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Con esto estamos creando una variable en la que guardaremos el número del pin que utilizaremos conectado al LED.</p>
+<p><span style="font-size: 14pt;"><strong>La función void setup ( )</strong></span><br />Esta función se ejecuta cada vez que se inicia Arduino. Una de las operaciones que se realiza en void setup () es la de configurar de los pines que vamos a utilizar.</p>
+<p>En el caso del ejemplo :</p>
+<p><img src="code_05.png" width="301" height="95" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Como sólo se usa un pin, llamado “LED”, sólo existe una función de configuración “pinMode” en la que indicamos que lo usaremos como salida.</p>
+<p><span style="font-size: 14pt;"><strong>La función void loop ( )</strong></span><br />Esta función es el corazón de los programas creados con arduino. Es una función que permanece en ejecución en forma de bucle infinito. Esto quiere decir que se ejecuta de comienzo a fin, de forma repetida, siempre.</p>
+<p>Esto queda más claro viendo el contenido del ejemplo:</p>
+<p><img src="code_06.png" width="599" height="115" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Una vez que ha esperado un segundo por segunda vez, la ejecución vuelve al principio de loop y volvería a encender el led, y así sucesivamente.</p>
+<p><span style="font-size: 14pt;"><strong>Flujo de programación</strong></span><br />Por lo tanto podemos imaginarnos, de una manera visual, que la ejecución normal de un programa de Arduino es de la siguiente manera:</p>
+<p><img src="code_07.png" alt="" width="319" height="420" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="code_08.png" alt="" width="540" height="412" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="introduccin_a_arduino.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_1.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
