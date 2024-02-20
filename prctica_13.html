@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Práctica 06 | Prácticas Arduino </title>
+<title>Práctica 13 | Prácticas Arduino </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
@@ -15,7 +15,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Prácticas Arduino</div></header>
@@ -29,73 +29,77 @@
    <li><a href="prctica_03.html" class="no-ch">Práctica 03</a></li>
    <li><a href="prctica_04.html" class="no-ch">Práctica 04</a></li>
    <li><a href="prctica_05.html" class="no-ch">Práctica 05</a></li>
-   <li id="active"><a href="prctica_06.html" class="active no-ch">Práctica 06</a></li>
+   <li><a href="prctica_06.html" class="no-ch">Práctica 06</a></li>
    <li><a href="prctica_07.html" class="no-ch">Práctica 07</a></li>
    <li><a href="prctica_08.html" class="no-ch">Práctica 08</a></li>
    <li><a href="prctica_09.html" class="no-ch">Práctica 09</a></li>
    <li><a href="prctica_10.html" class="no-ch">Práctica 10</a></li>
    <li><a href="prctica_11.html" class="no-ch">Práctica 11</a></li>
    <li><a href="prctica_12.html" class="no-ch">Práctica 12</a></li>
-   <li><a href="prctica_13.html" class="no-ch">Práctica 13</a></li>
+   <li id="active"><a href="prctica_13.html" class="active no-ch">Práctica 13</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="prctica_05.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_07.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="prctica_12.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Práctica 06</h1></header>
-<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id28">
+<header id="nodeDecoration"><h1 id="nodeTitle">Práctica 13</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id54">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta28_120_2" class="block iDevice_content">
-<div class="pbl-task-description"><p>En esta práctica vamos a realizar la simulación de un semáforo según la siguiente secuencia:</p>
+<div id="ta54_128_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>El objetivo de esta práctica es encender varios leds en función de los valores que va tomando una resistencia LDR.</p>
+<p>Una LDR (Light-Dependent Resistor) es un componente electrónico cuya resistencia disminuye con el aumento de intensidad de luz incidente.</p>
+<p><img src="Captura_desde_2024-02-20_21-34-13.png" alt="" width="527" height="283" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>En esta práctica pretendemos que:</p>
 <ul>
-<li>Led rojo: 2 segundos</li>
-<li>Led verde: 2 segundos</li>
-<li>Led amarillo: 0,5 segundos</li>
+<li>Cuando haya muy poca luz se enciendan los tres leds.</li>
+<li>Cuando haya poca luz se enciendan dos leds.</li>
+<li>Cuando haya un poco más de luz se encienda solo uno.</li>
+<li>Y cuando haya mucha luz no se encienda ninguno.</li>
 </ul>
-<p>Para ello, conectaremos el ánodo del led rojo al pin 12, el ánodo del led amarillo al pin 10 y el ánodo del led verde al pin 8.</p></div>
+<p>La LDR irá conectada al pin A0 y la información de la luz nos la dará su lectura que trasladaremos al monitor serie para visualizarlo en pantalla: valores cercanos a 1023 significan mucha luz (poca resistencia) y valores cercanos a 0 muy poca luz (mucha resistencia).</p></div>
 </div>
 </div>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id29">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id55">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Esquema de montaje</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta29_121_2" class="block iDevice_content">
-<div class="exe-text"><p><img src="Captura_desde_2024-02-18_19-29-50.png" alt="" width="668" height="750" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+<div id="ta55_129_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="Practica_13_arduino.png" alt="" width="1199" height="540" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
 </div>
 </div>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id30">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id56">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Programación</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta30_122_2" class="block iDevice_content">
-<div class="exe-text"><p><img src="Captura_desde_2024-02-18_19-31-08.png" alt="" width="829" height="662" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+<div id="ta56_130_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="Captura_desde_2024-02-20_21-39-08.png" alt="" width="948" height="888" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
 </div>
 </div>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id31">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id57">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso a paso</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta31_123_2" class="block iDevice_content">
-<div class="exe-text"><p style="text-align: center;"><iframe width="640" height="480" src="https://drive.google.com/file/d/1uSIYwhOxQxtQCJ78WU-FuYe4_FJvf1nP/preview" allow="autoplay"></iframe></p></div>
+<div id="ta57_131_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><iframe width="640" height="480" src="https://drive.google.com/file/d/19o-Yct_qQNtiBwn7FurSmDAA4_1NmysP/preview" allow="autoplay"></iframe></p></div>
 </div>
 </div>
 </div>
@@ -108,7 +112,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="prctica_05.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_07.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="prctica_12.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
 </nav>
 </div>
 </div>
